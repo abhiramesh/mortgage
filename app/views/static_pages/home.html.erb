@@ -1,0 +1,52 @@
+<div align="center">
+	<img src="/assets/banner.png" class="banner">
+</div>
+<div class="container" align="center">
+	<div class="first-heading">
+		Looking For The Best Reverse Mortgage?
+	</div>
+	<div class="second-heading">
+		Compare Rates Now & Get a <span class="guide-text">FREE Reverse Mortgage Guide!</span>
+	</div>
+	<div class="row">
+		<div class="span4 features-section">
+			<div class="features-title">
+				Reverse Mortgage Features
+			</div>
+			<div class="features-list">
+				<span class="bullet">.</span> Flexible monthly income
+				<br>
+				<span class="bullet">.</span> Eliminate your mortgage payments
+				<br>
+				<span class="bullet">.</span> Consolidate your bills
+			</div>
+			<div class="features-final">
+				Talk to a local independent advisor and explore the best options for you and your family.
+			</div>
+		</div>
+		<div class="span4 book">
+			<div class="book-title">
+				Free Reverse Mortgage Guide
+			</div>
+		</div>
+		<div class="extra-book">
+			<img src="/assets/black_ribbon.png">
+			<div class="ribbon-content">
+				FREE ANUITY GUIDE. FREE RATE COMPARISON.
+			</div>
+			<div class="extra-content">
+				Get Your Free Guide Now
+				<div class="extra-subcontent">
+					Complete the form below to recieve your info now.
+				</div>
+				<div class="form">
+					<%= form_for @user do |f| %>
+						<%= f.label :zipcode %>
+						<%= f.text_field :zipcode, placeholder: "Zipcode" %>
+				 		<%= f.submit 'Next', :class => "submit" %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

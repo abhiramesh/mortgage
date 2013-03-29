@@ -1,10 +1,152 @@
+@import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
 body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  margin-top: 0px;
 }
+
+
+.banner{
+  z-index: -100000;
+  position: relative;
+  min-width: 1025px;
+}
+
+.first-heading{
+  margin-top: -400px;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.second-heading{
+  padding-top: 30px;
+  color: white;
+  font-size: 26px;
+}
+
+.guide-text{
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
+  background: white;
+  padding: 0px 5px;
+}
+
+.features-section{
+  text-align: left;
+  padding-top: 70px;
+}
+
+.features-title{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.features-list{
+  color: white;
+  font-size: 12px;
+  padding-top: 0px;
+}
+
+.bullet{
+  font-size: 45px;
+}
+
+.features-final{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.book{
+  padding-top: 55px;
+  color: white;
+  background: url('book.png');
+  background-repeat: no-repeat;
+  padding-bottom: 55px;
+  margin-top: 70px;
+}
+
+.book-title{
+  font-family: 'Gill Sans';
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: bold;
+  width: 80%;
+  margin-left: -10px;
+}
+
+.extra-book{
+  position: relative;
+  top: -287px;
+  left: 293px;
+  color: white;
+  font-family: 'Gill Sans';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ribbon-content{
+  margin-top: -24px;
+  padding-bottom: 20px;
+}
+
+.extra-content{
+  color: #373737;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 31px;
+  background: white;
+  width: 400px;
+  margin-left: 15px;
+  margin-top: -13px;
+  padding-top: 20px;
+  box-shadow: 2px 5px 5px #313131;
+  padding-bottom: 30px;
+}
+
+.extra-subcontent{
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.form{
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.submit{
+  font-weight: bold;
+  font-family: 'Gill Sans',Arial,Helvetica,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  color: white;
+  display: block;
+  background: #24B544;
+  border-radius: 0px;
+  border-color: #24B544;
+  padding: 10px 35px 10px 35px;
+  cursor: pointer;
+  border: none;
+  margin-left: 240px;
+  margin-top: -50px;
+}
+
+.submit:hover{
+  color: black;
+}
+
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -66,4 +208,8 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  height: 30px;
 }
