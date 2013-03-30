@@ -1,0 +1,20 @@
+		<div class="extra-content-2">
+				<div class="form">
+					<%= form_for @user, remote: true, :method => :put, :html => {:id => "form-2" } do |f| %>
+						<div class="row">
+							<div class="span2">
+								<%= f.label :home_value %>
+								<%= f.text_field :home_value, placeholder: "Home Value", :style => "width:120px;" %>
+							</div>
+							<div class="span2">
+								<%= f.label :mortgage_balance %>
+								<%= f.text_field :mortgage_balance, placeholder: "Mortgage Balance", :style => "width:120px;" %>
+							</div>
+						</div>
+								<br>
+								<br>
+					 		<%= f.submit "Next", :class => "submit-2" %>
+						<% end %>
+				</div>
+		</div>
+		

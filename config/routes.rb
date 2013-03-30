@@ -1,5 +1,10 @@
 Mortgage::Application.routes.draw do
 
+  devise_for :users, :controllers => { :registrations => "registration" } do
+    get '/logout' => 'devise/sessions#destroy', :as => "destroy_user_session"
+  end
+
+
   resources :users
 
 

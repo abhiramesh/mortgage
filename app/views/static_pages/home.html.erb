@@ -32,7 +32,7 @@
 		<div class="extra-book">
 			<img src="/assets/black_ribbon.png">
 			<div class="ribbon-content">
-				FREE ANUITY GUIDE. FREE RATE COMPARISON.
+				FREE PRODUCT AND RATE COMPARISON
 			</div>
 			<div class="extra-content">
 				Get Your Free Guide Now
@@ -40,7 +40,7 @@
 					Complete the form below to recieve your info now.
 				</div>
 				<div class="form">
-					<%= form_for @user do |f| %>
+					<%= form_for User.new, remote: true do |f| %>
 						<%= f.label :zipcode %>
 						<%= f.text_field :zipcode, placeholder: "Zipcode" %>
 				 		<%= f.submit 'Next', :class => "submit" %>
@@ -50,3 +50,5 @@
 		</div>
 	</div>
 </div>
+<%= render 'users/form2' %>
+<%= render 'users/form3' %>

@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
-def home
-	@user = User.new
-end
+	def home
+		@user = current_user || User.new
+	end
 
 end
