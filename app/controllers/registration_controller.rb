@@ -1,10 +1,10 @@
 class RegistrationController < Devise::RegistrationsController
 
   def create
-    @user = User.new(params[:user])
+    build_resource
 
     respond_to do |format|
-      if @user.save
+      if resource.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.js
       else

@@ -9,6 +9,8 @@ Mortgage::Application.routes.draw do
 
 
   root to: 'static_pages#home'
+
+  get '/thanks', to: 'users#thanks'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
