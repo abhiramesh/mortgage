@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 		@user = current_user || User.new
 	end
 
+	def thanks
+	end
+
 end
