@@ -5,7 +5,7 @@ body {
   background-color: #fff;
   color: #333;
   font-family: 'Gill Sans';
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   margin-top: 0px;
 }
@@ -48,13 +48,13 @@ body {
 
 .features-title{
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .features-list{
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 0px;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .book{
   color: white;
-  background: url("book-3.png");
+  background: url("book-5.png");
   background-repeat: no-repeat;
   margin-top: 70px;
   width: 265px;
@@ -94,6 +94,12 @@ body {
 .ribbon-content{
   margin-top: -24px;
   padding-bottom: 20px;
+}
+
+.emp-text{
+  color: #d06338;
+  font-weight: bolder;
+  -webkit-font-smoothing: antialiased;
 }
 
 .extra-content{
@@ -142,7 +148,8 @@ body {
 
 
 .extra-subcontent{
-  text-transform: uppercase;
+  text-transform: none;
+  font-family: 'Gill Sans';
   font-size: 13px;
   padding-top: 20px;
 }
@@ -161,7 +168,7 @@ body {
   color: white;
   display: block;
   background: #24B544;
-  border-radius: 0px;
+  border-radius: 7px;
   border-color: #24B544;
   padding: 10px 35px 10px 35px;
   cursor: pointer;
@@ -184,7 +191,7 @@ body {
   color: white;
   display: block;
   background: #24B544;
-  border-radius: 0px;
+  border-radius: 7px;
   border-color: #24B544;
   padding: 10px 35px 10px 35px;
   cursor: pointer;
@@ -204,7 +211,7 @@ body {
   color: white;
   display: block;
   background: #24B544;
-  border-radius: 0px;
+  border-radius: 7px;
   border-color: #24B544;
   padding: 10px 35px 10px 35px;
   cursor: pointer;
@@ -235,6 +242,19 @@ body {
   margin-top: 5px;
   padding-bottom: 5px;
   font-size: 12px;
+  font-family: 'Gill Sans';
+  font-weight: normal;
+}
+
+.back-link{
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.back-link:hover{
+  color: #093E67;
 }
 
 
