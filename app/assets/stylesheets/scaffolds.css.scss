@@ -4,8 +4,8 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: 'Gill Sans';
+  font-size: 15px;
   line-height: 18px;
   margin-top: 0px;
 }
@@ -20,14 +20,17 @@ body {
 .first-heading{
   margin-top: -400px;
   color: white;
-  font-size: 38px;
   font-weight: bold;
+  font-family: 'Oswald';
+  font-size: 55px;
+  padding-bottom: 15px;
 }
 
 .second-heading{
   padding-top: 30px;
   color: white;
   font-size: 26px;
+  font-family: 'Gill Sans';
 }
 
 .guide-text{
@@ -68,27 +71,20 @@ body {
 }
 
 .book{
-  padding-top: 55px;
   color: white;
-  background: url('book.png');
+  background: url("book-3.png");
   background-repeat: no-repeat;
-  padding-bottom: 55px;
   margin-top: 70px;
-}
-
-.book-title{
-  font-family: 'Gill Sans';
-  font-size: 38px;
-  line-height: 50px;
-  font-weight: bold;
-  width: 80%;
-  margin-left: -10px;
+  width: 265px;
+  height: 310px;
+  padding: 0px;
+  background-size: contain;
 }
 
 .extra-book{
   position: relative;
-  top: -287px;
-  left: 293px;
+  top: -297px;
+  left: 275px;
   color: white;
   font-family: 'Gill Sans';
   font-weight: bold;
@@ -221,7 +217,7 @@ body {
 }
 
 .more-info{
-  margin-top: -180px;
+  margin-top: -220px;
   font-family: 'Gill Sans';
   font-size: 18px;
   line-height: 21px;
@@ -232,6 +228,13 @@ body {
   padding-bottom: 15px;
   font-family: 'Oswald';
   font-size: 24px;
+}
+
+.message{
+  color: red;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
 }
 
 

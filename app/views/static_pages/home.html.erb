@@ -25,9 +25,6 @@
 			</div>
 		</div>
 		<div class="span4 book">
-			<div class="book-title">
-				Free Reverse Mortgage Guide
-			</div>
 		</div>
 		<div class="extra-book">
 			<img src="/assets/black_ribbon.png">
@@ -43,7 +40,8 @@
 					<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), remote: true) do |f| %>
 						<%= f.label :zipcode %>
 						<%= f.text_field :zipcode, placeholder: "Zipcode" %>
-				 		<%= f.submit 'Next', :class => "submit" %>
+				 		<%= f.submit 'Next', :class => "submit", :id => "submit-part-1" %>
+				 		<div class="message" id="zip_error"></div>
 					<% end %>
 				</div>
 			</div>
@@ -80,3 +78,22 @@
 </div>
 <%= render 'users/form2' %>
 <%= render 'users/form3' %>
+<script type="text/javascript">
+	$('input#user_zipcode').blur(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
+		if (zipRegex.test($('input#user_zipcode').val())) {
+			$('#zip_error').empty();
+		}
+	});
+	$('#submit-part-1').click(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
+	});
+</script>
