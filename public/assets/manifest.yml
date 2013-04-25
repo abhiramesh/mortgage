@@ -11,12 +11,12 @@ book-4.png: book-4-55d04cf93eca2c963386781c106cc1ea.png
 book-4/index.png: book-4-55d04cf93eca2c963386781c106cc1ea.png
 book-5.png: book-5-3ac21d29d05bb03e4b16d4a24e936fa1.png
 book-5/index.png: book-5-3ac21d29d05bb03e4b16d4a24e936fa1.png
-book.png: book-67cacd9118d290677b877db39d0a2a9e.png
-book/index.png: book-67cacd9118d290677b877db39d0a2a9e.png
+book.png: book-5105b123adbc10be288bf6d4ad58a504.png
+book/index.png: book-5105b123adbc10be288bf6d4ad58a504.png
 application.js: application-9bd69fb0da4e1919c641f3ec2f35d4e2.js
 application/index.js: application-9bd69fb0da4e1919c641f3ec2f35d4e2.js
-application.css: application-0e4b4468ee00f079dc79426f85c77468.css
-application/index.css: application-0e4b4468ee00f079dc79426f85c77468.css
+application.css: application-c11ace9d131bc7410916adc9cd2611ac.css
+application/index.css: application-c11ace9d131bc7410916adc9cd2611ac.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png

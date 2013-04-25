@@ -1,83 +1,39 @@
 		<div class="extra-content-3">
 				<div class="form">
-					<%= form_for @user, :method => :put, :html => {:id => "form-3" } do |f| %>
+					<%= form_for @user, remote: true, :method => :put, :html => {:id => "form-3" } do |f| %>
 						<div class="row">
 							<div class="span2">
-								<%= f.label :name %>
-								<%= f.text_field :name, placeholder: "Name", :style => "width:90px;" %>
-							</div>
-							<div class="span2" style="margin-left:-25px;">
-								<%= f.label :email %>
-								<%= f.text_field :email, placeholder: "Email", :style => "width:90px;" %>
-							</div>
-							<div class="span1" style="margin-left:-23px;">
-								<%= f.label :phone %>
-								<%= f.text_field :phone, placeholder: "Phone", :style => "width:90px;" %>
+								<%= f.label :zipcode %>
+								<%= f.text_field :zipcode, placeholder: "Zipcode", :style => "width:120px;" %>
 							</div>
 						</div>
-						<div class="row">
-							<div class="span2" style="width:102px;">
-								<div class="message" id="name_error"></div>
-							</div>
-							<div class="span2" style="width:102px;">
-								<div class="message" id="email_error"></div>
-							</div>
-							<div class="span2" style="width:102px;">
-								<div class="message" id="phone_error"></div>
-							</div>
-						</div>
-					 		<%= f.submit "Submit", :class => "submit-3", :id => "submit-part-3" %>
+						<div class="message" id="zip_error"></div>
+					 		<%= f.submit "Next", :class => "submit-3", :id => "submit-part-3" %>
 						<% end %>
 						<div class="back-link" id="back-link-2">Back</div>
 				</div>
 			</div>
 			<script type="text/javascript">
-				$('input#user_name').blur(function(event){
-					if ($('input#user_name').val().length < 1) {
-						event.preventDefault();
-						$('#name_error').empty().append("Please enter your name");
-					}
-					if ($('input#user_name').val().length > 0) {
-						$('#name_error').empty();
-					}
-				});
-				$('input#user_email').blur(function(event){
-					var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-					if (!email_format.test($('input#user_email').val())) {
-						event.preventDefault();
-						$('#email_error').empty().append("Please enter a valid email");
-					}
-					if (email_format.test($('input#user_email').val())) {
-						$('#email_error').empty();
-					}
-				});
-				$('input#user_phone').blur(function(event){
-					if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
-						event.preventDefault();
-						$('#phone_error').empty().append("Please enter your phone number");
-					}
-					if ($('input#user_phone').val().replace(/\D+/g,'').length == 10) {
-						$('#phone_error').empty();
-					}
-				});
-				$('#submit-part-3').click(function(event){
-					var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-					if ($('input#user_name').val().length < 1) {
-						event.preventDefault();
-						$('#name_error').empty().append("Please enter your name");
-					}
-					if (!email_format.test($('input#user_email').val())) {
-						event.preventDefault();
-						$('#email_error').empty().append("Please enter a valid email");
-					}
-					if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
-						event.preventDefault();
-						$('#phone_error').empty().append("Please enter your phone number");
-					}
-				});
-				$('#back-link-2').click(function(){
+			$('input#user_zipcode').blur(function(event){
+			    var zipRegex = /^\d{5}$/;
+			    if (!zipRegex.test($('input#user_zipcode').val())) {
+			      event.preventDefault();
+			      $('#zip_error').empty().append("Please enter a valid zipcode");
+			    }
+			    if (zipRegex.test($('input#user_zipcode').val())) {
+			      $('#zip_error').empty();
+			    }
+			  });
+			  $('#submit-part-3').click(function(event){
+			    var zipRegex = /^\d{5}$/;
+			    if (!zipRegex.test($('input#user_zipcode').val())) {
+			      event.preventDefault();
+			      $('#zip_error').empty().append("Please enter a valid zipcode");
+			    }
+			  });
+			  $('#back-link-2').click(function(){
 					$('.extra-content-3').hide();
 					$('.extra-content-2').show().insertAfter('div.ribbon-content');
-				});
+			  });
 			</script>
 	

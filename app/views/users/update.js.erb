@@ -1,3 +1,9 @@
+<% if current_user.zipcode == nil %>
 $('.extra-content-2').hide();
 $('.extra-content-3').show().insertAfter('div.ribbon-content');
 $('#form-3').attr('action','/users/' + '<%=current_user.id%>');
+$('.extra-content-3').hide();
+$('.extra-content-4').show().insertAfter('div.ribbon-content');
+$('#form-4').attr('action','/users/' + '<%=current_user.id%>');
+<% else %>
+<% end %>
